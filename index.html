@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EST Student Space</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <span>EST</span> Student Space
+        </div>
+
+        <nav id="navbar">
+            <a href="#accueil">Accueil</a>
+            <a href="#formations">Formations</a>
+            <a href="#services">Services</a>
+            <a href="#apropos">À propos</a>
+            <a href="#chatbot" class="nav-button">Assistant IA</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+
+    <!-- ACCUEIL -->
+    <section class="hero" id="accueil">
+
+        <div class="hero-content">
+
+            <span class="subtitle">BIENVENUE SUR NOTRE PLATEFORME</span>
+
+            <h1>
+                EST Student Space
+                <br>
+                <span>Votre espace étudiant</span>
+            </h1>
+
+            <p>
+                Retrouvez toutes les informations utiles
+                pour votre vie universitaire à l'École
+                Supérieure de Technologie de Kénitra.
+            </p>
+
+            <a href="#services" class="btn">
+                Découvrir nos services
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <div class="circle">
+                <div class="book">📚</div>
+                <h2>Study</h2>
+                <p>Learn & Succeed</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FORMATIONS -->
+    <section class="section" id="formations">
+
+        <div class="section-title">
+            <span>PARCOURS ACADÉMIQUE</span>
+            <h2>Nos formations</h2>
+            <p>
+                Découvrez les domaines de formation
+                proposés aux étudiants.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Génie Logiciel</h3>
+                <p>
+                    Apprentissage de la programmation,
+                    du développement logiciel et des
+                    bases de données.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Technologie</h3>
+                <p>
+                    Découverte des technologies et
+                    des compétences techniques.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Gestion</h3>
+                <p>
+                    Développement des compétences
+                    en organisation et gestion.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+
+        <div class="section-title">
+            <span>VIE UNIVERSITAIRE</span>
+            <h2>Nos services étudiants</h2>
+            <p>
+                Toutes les informations importantes
+                pour faciliter votre parcours universitaire.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Emploi du temps</h3>
+                <p>
+                    Consultez les informations concernant
+                    les horaires et les cours.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Examens</h3>
+                <p>
+                    Retrouvez les informations relatives
+                    aux examens et aux évaluations.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📂</div>
+                <h3>Documents</h3>
+                <p>
+                    Accédez aux informations concernant
+                    les documents administratifs.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- A PROPOS -->
+    <section class="about section" id="apropos">
+
+        <div class="about-content">
+
+            <span>À PROPOS</span>
+
+            <h2>
+                Un espace dédié
+                aux étudiants
+            </h2>
+
+            <p>
+                EST Student Space est une plateforme
+                destinée aux étudiants de l'École
+                Supérieure de Technologie de Kénitra.
+
+                Notre objectif est de faciliter l'accès
+                aux informations universitaires et
+                d'offrir une expérience simple et pratique.
+            </p>
+
+        </div>
+
+        <div class="about-icon">
+            🎓
+        </div>
+
+    </section>
+
+
+    <!-- CHATBOT -->
+    <section class="chatbot-section" id="chatbot">
+
+        <div class="section-title">
+
+            <span>ASSISTANT VIRTUEL</span>
+
+            <h2>Besoin d'aide ?</h2>
+
+            <p>
+                Posez vos questions à notre assistant étudiant.
+            </p>
+
+        </div>
+
+
+        <div class="chat-container">
+
+            <div class="chat-header">
+
+                <div class="bot-icon">🤖</div>
+
+                <div>
+                    <h3>Assistant EST</h3>
+                    <span>● En ligne</span>
+                </div>
+
+            </div>
+
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="bot-message">
+                    Bonjour ! 👋
+                    Je suis votre assistant étudiant.
+                    Comment puis-je vous aider ?
+                </div>
+
+            </div>
+
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Écrivez votre question..."
+                >
+
+                <button id="sendButton">
+                    ➤
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>EST Student Space</h3>
+
+        <p>
+            Votre espace étudiant à l'EST Kénitra.
+        </p>
+
+        <p class="copyright">
+            © 2026 EST Student Space. Tous droits réservés.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
